@@ -13,9 +13,9 @@ On the command line:
 7. go to github.com quick setup page of your new repo, and copy the remote https url for your github repo
 8. on command line: git remote add origin <paste url> 
 9. push local repo to repo on gihub.com by: git push -u origin master
-  if error: error: src refspec master does not match any
-  then use: git push
-  solution will be to do this instead (CLI will tell you also): 
+a. if error: error: src refspec master does not match any
+b.  then use: git push
+c.  solution will be to do this instead (CLI will tell you also): 
 1. To push the current branch and set the remote as upstream: git push --set-upstream origin main
   2. authenticate in the browser
 
