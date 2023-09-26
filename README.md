@@ -11,7 +11,7 @@ On the command line:
 5. see the files you added by: git status
 6. commit the files by: git commit -m "first commit"
 7. go to github.com quick setup page of your new repo, and copy the remote https url for your github repo
-8. on command line: git remote add origin <paste url> 
+8. on command line: git remote add origin <link> 
 9. push local repo to repo on gihub.com by: git push -u origin master
 a. if error: error: src refspec master does not match any
 b.  then use: git push
