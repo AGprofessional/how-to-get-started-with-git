@@ -55,3 +55,31 @@ PS: this will not keep your old commit history around
 
 ----
 For this same problem, the easiest thing to do is, 1. delete the large file from your local repo also - since you can't push it to github anyway. 2. undo the previous git add . command using: git reset --soft HEAD. 3. use git status, git add ., git push, to see if problem is resolved, if not, then undo 2x: git reset --soft HEAD~2. 4. do this process: try, git push, if error persists, then undo 3x and so on.
+
+
+
+
+
+
+----
+Now, how to create a new branch for each commit, and save to that branch:
+
+When you are ready to commit, then first:
+
+1. make a copy of current branch into a new branch then switch to it:
+   a. ways to do this: if you are already on the old_branch that has the current project state (The one you want to copy):
+      git checkout -b NEW_BRANCH_NAME 
+   b. if you are not already on it: then:
+git checkout old_branch
+git branch new_branch
+
+**sometimes you might need to first do a git pull to get the full current state onto the branch before you copy it.
+
+
+
+3. now that you are on this branch, simply do as before:
+   git add .
+   git status
+   git commit -m "message"
+   git push
+
